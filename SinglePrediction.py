@@ -34,9 +34,9 @@ def show_single():
             pred = model.predict(input_data)
             label = ""
             if pred[0] == 0:
-                label = "Transaksi Penipuan"
-            elif pred[0] == 1:
                 label = "Transaksi Normal"
+            elif pred[0] == 1:
+                label = "Transaksi Penipuan"
             else:
                 label = "Unknown"
             st.subheader(f"{model_name} Prediction: {pred[0]} → {label}")
