@@ -5,7 +5,7 @@ import numpy as np
 def show_single_regressor():
     st.header("🪙 Single Prediction Regressor")
 
-    st.subheader("🔢 Masukkan Nilai Fitur:")
+    st.subheader("🔢 Input Features:")
 
     # Input fitur regresi yang sesuai dengan model training
     features = {
@@ -28,7 +28,7 @@ def show_single_regressor():
     input_data = np.array(list(features.values())).reshape(1, -1)
 
     # Model yang dapat dipilih
-    st.subheader("🧠 Pilih Model:")
+    st.subheader("🧠 Choose Models:")
     use_knn = st.checkbox("K-Nearest Neighbors")
     use_svm = st.checkbox("Support Vector Machine")
     use_nn  = st.checkbox("Neural Network")
