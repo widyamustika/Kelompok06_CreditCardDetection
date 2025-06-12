@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 def get_label(pred):
-    return "Transaksi Penipuan" if pred == 0 else "Transaksi Normal" if pred == 1 else "Unknown"
+    return "Transaksi Normal" if pred == 0 else "Transaksi Penipuan" if pred == 1 else "Unknown"
 
 def show_batch():
     st.header("💴 Batch Prediction Classifier")
