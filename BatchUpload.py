@@ -100,6 +100,7 @@ def get_label(pred):
 
 def show_batch():
     load_custom_css()
+
     
     # Header dengan styling custom
     st.markdown("""
